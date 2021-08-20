@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 p, li {
@@ -27,6 +28,7 @@ h2 {
   line-height: 55px;
   font-weight: 600;
   letter-spacing: -1px;
+  margin-bottom: 30px;
 }
 
 .rounded-photo {
@@ -42,4 +44,24 @@ h2 {
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.header {
+  background-image: url('images/smiling-image.jpg');
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30px 40px 30px;
+}
+
+.header-content {
+  max-width: 60%;
+  margin-left: 75px;
+}
+
+.header-text {
+  max-width: 80%;
+}
+
+.header-text p {
+  margin-bottom: 30px;
 }
