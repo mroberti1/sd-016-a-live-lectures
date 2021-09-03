@@ -1,29 +1,4 @@
-const btnHoliday = document.getElementById('btn-holiday');
-btnHoliday.addEventListener('click', function () {
-  const holidays = document.querySelectorAll('.holiday');
-  for (let index = 0; index < holidays.length; index += 1) {
-    if (holidays[index].style.backgroundColor === 'white') {
-      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
-    } else {
-      holidays[index].style.backgroundColor = 'white';
-    }
-  }
-})
-
-const fridayDays = [6, 13, 20, 27];
-const btnFriday = document.getElementById('btn-friday');
-btnFriday.addEventListener('click', function () {
-  const fridays = document.getElementsByClassName('friday-day');
-  for (let index = 0; index < fridays.length; index += 1) {
-    if (fridays[index].innerHTML !== "SEXTOU!") {
-      fridays[index].innerHTML = "SEXTOU!";
-    } else {
-      fridays[index].innerHTML = fridayDays[index];
-    }
-  }
-})
-
-const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 const weekDaysList = document.querySelector('.week-days');
 
 for (let index = 0; index < weekDays.length; index += 1) {
@@ -45,11 +20,11 @@ const getDaysList = document.querySelector('#days');
 for (let index = 0; index < daysList.length; index += 1) {
   const day = daysList[index];
   const dayItem = document.createElement('li');
-  if (day === 2 | day === 15) {
+  if (day === 2 || day === 15) {
     dayItem.className = 'holiday';
     dayItem.innerHTML = day;
     getDaysList.appendChild(dayItem);
-  } else if (day === 6 | day === 13 | day === 27) {
+  } else if (day === 6 || day === 13 || day === 27) {
     dayItem.className = 'friday-day';
     dayItem.innerHTML = day;
     getDaysList.appendChild(dayItem);
@@ -63,6 +38,31 @@ for (let index = 0; index < daysList.length; index += 1) {
   }
 }
 
+const btnHoliday = document.getElementById('btn-holiday');
+btnHoliday.addEventListener('click', function () {
+  const holidays = document.querySelectorAll('.holiday');
+  for (let index = 0; index < holidays.length; index += 1) {
+    if (holidays[index].style.backgroundColor === 'white') {
+      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+      holidays[index].style.backgroundColor = 'white';
+    }
+  }
+});
+
+const fridayDays = [6, 13, 20, 27];
+const btnFriday = document.getElementById('btn-friday');
+btnFriday.addEventListener('click', function () {
+  const fridays = document.getElementsByClassName('friday-day');
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerHTML !== "SEXTOU!") {
+      fridays[index].innerHTML = "SEXTOU!";
+    } else {
+      fridays[index].innerHTML = fridayDays[index];
+    }
+  }
+});
+
 function changeColor(elements, color) {
   let selectedItems = document.querySelectorAll(elements);
   // Percorrer essa lista de elementos e mudar a cor de cada um
@@ -70,5 +70,3 @@ function changeColor(elements, color) {
     selectedItems[index].style.backgroundColor = color;
   }
 }
-
-changeColor('.holiday', 'blue');
