@@ -15,38 +15,69 @@
 
   <main>
 
-    <!-- form -->
-    <form action="" method="get" class="speaker-form">
-      
-      <!-- input - full-name -->
-      <div class="form-row">
-        <div class="line-content">
-          <label for="full-name">Nome</label>
-          <input type="text" name="full-name" id="full-name">
+      <!-- form -->
+      <form action="" method="GET" class="speaker-form">
+        
+        <!-- input - full-name -->
+        <div class="form-row">
+          <div class="line-content">
+            <label for="full-name">Nome</label>
+            <input type="text" required name="full-name" id="full-name">
+          </div>
         </div>
-      </div>
-  
-  
-      <!-- fieldset - type of talk   -->
     
     
-      <!-- select - t-short size -->
-    
-    
-      <!-- textarea - abstract  -->
-    
-    
-      <!-- checkbox - available -->
+        <!-- fieldset - type of talk   -->
+
+        <div class="line-content">
+          <fieldset class="legacy-form-row">
+            <legend>Tipo de palestra</legend>
+              <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+              <label for="talk-type-1">Palco principal</label>
+              <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
+              <label for="talk-type-2">Workshop</label>
+          </fieldset>
+        </div>
+      
+      
+        <!-- select - t-shirt size -->
+
+        <div class="line-content">
+          <label for="t-shirt-size">Tamanho da camisa:</label>
+          <select name="t-shirt-size" id="t-shirt-size">
+            <option value="p">Pequeno</option>
+            <option value="m">Médio</option>
+            <option value="g">Grande</option>
+          </select>
+        </div>
+        
+      
+        <!-- textarea - abstract  -->
+
+        <div class="line-content">
+          <label for="abstract">Resumo da Palestra:</label>
+          <textarea name="abstract" id="abstract" placeholder="Explique o conteúdo da sua palestra" cols="30" rows="10"></textarea>
+        </div>
+      
+      
+        <!-- checkbox - available -->
+
+        <div class="line-content">
+          <input type="checkbox" name="available" id="available" value="is_available">
+          <label for="available"> Confirmo que estou disponível da data do evento.</label>
+        </div>
+
+        <!-- botão - enviar - submit -->
+
+        <div class="line-content">
+          <button type="submit"> Enviar</button>
+        </div>
 
 
-    </form>
-  </main>
 
 
-</body>
-
-
-
-
-
+      </form>
+    </main>
+  </body>
 </html>
+

@@ -57,19 +57,26 @@
   }
   
   .form-row label {
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
   }
   
   .line-content {
-    /* margin: 20px; */
-    /* border: 0 none; */
+    margin: 20px;
+    border: 0 none;
   }
 
   /* Parada 3 - Elementos do forms estilizados */
 
   .legacy-form-row {
-    /* padding: 10px; */
-}
+    padding: 10px;
+  }
 
+  textarea {
+    width: 100%;
+    margin-top: 15px;
+  }
 /* Parada 4 - Estiliza o fieldset */
 
+button {
+  padding: 10px;
+}
