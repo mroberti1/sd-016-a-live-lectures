@@ -29,15 +29,16 @@
 
 
         <!-- fieldset - type of talk   -->
-
-        <div>
-          <fieldset>
-            <legend>Tipo de palestra</legend>
-            <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
-            <label for="talk-type-1">Palco principal</label>
-            <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
-            <label for="talk-type-2">Workshop</label>
-          </fieldset>
+        <div class="container">
+          <p class="lead">Tipo de palestra</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+            <label class="form-check-label" for="talk-type-1">Palco principal</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="talk-type" id="talk-type-2" value="workshop" checked>
+            <label class="form-check-label" for="talk-type-2">Workshop</label>
+          </div>
         </div>
 
 
