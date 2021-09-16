@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Submeter Palestra</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submeter Palestra</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header>
-    <h1>Submeter Palestra</h1>
-    <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
-  </header>
+  <body>
+    <header>
+      <h1>Submeter Palestra</h1>
+      <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+    </header>
 
-  <main>
+    <main>
 
       <!-- form -->
       <form action="" method="GET">
-        
+
         <!-- input - full-name -->
         <div>
           <div>
@@ -25,21 +28,21 @@
             <input type="text" required name="full-name" id="full-name">
           </div>
         </div>
-    
-    
+
+
         <!-- fieldset - type of talk   -->
 
         <div>
           <fieldset>
             <legend>Tipo de palestra</legend>
-              <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
-              <label for="talk-type-1">Palco principal</label>
-              <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
-              <label for="talk-type-2">Workshop</label>
+            <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+            <label for="talk-type-1">Palco principal</label>
+            <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
+            <label for="talk-type-2">Workshop</label>
           </fieldset>
         </div>
-      
-      
+
+
         <!-- select - t-shirt size -->
 
         <div>
@@ -50,16 +53,17 @@
             <option value="g">Grande</option>
           </select>
         </div>
-        
-      
+
+
         <!-- textarea - abstract  -->
 
         <div>
           <label for="abstract">Resumo da Palestra:</label>
-          <textarea name="abstract" id="abstract" placeholder="Explique o conteúdo da sua palestra" cols="30" rows="10"></textarea>
+          <textarea name="abstract" id="abstract" placeholder="Explique o conteúdo da sua palestra" cols="30"
+            rows="10"></textarea>
         </div>
-      
-      
+
+
         <!-- checkbox - available -->
 
         <div>
@@ -79,5 +83,5 @@
       </form>
     </main>
   </body>
-</html>
 
+</html>
