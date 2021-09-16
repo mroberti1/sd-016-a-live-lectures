@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="speaker-form-header">
+  <header>
     <h1>Submeter Palestra</h1>
     <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
   </header>
@@ -16,11 +16,11 @@
   <main>
 
       <!-- form -->
-      <form action="" method="GET" class="speaker-form">
+      <form action="" method="GET">
         
         <!-- input - full-name -->
-        <div class="form-row">
-          <div class="line-content">
+        <div>
+          <div>
             <label for="full-name">Nome</label>
             <input type="text" required name="full-name" id="full-name">
           </div>
@@ -29,8 +29,8 @@
     
         <!-- fieldset - type of talk   -->
 
-        <div class="line-content">
-          <fieldset class="legacy-form-row">
+        <div>
+          <fieldset>
             <legend>Tipo de palestra</legend>
               <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
               <label for="talk-type-1">Palco principal</label>
@@ -42,7 +42,7 @@
       
         <!-- select - t-shirt size -->
 
-        <div class="line-content">
+        <div>
           <label for="t-shirt-size">Tamanho da camisa:</label>
           <select name="t-shirt-size" id="t-shirt-size">
             <option value="p">Pequeno</option>
@@ -54,7 +54,7 @@
       
         <!-- textarea - abstract  -->
 
-        <div class="line-content">
+        <div>
           <label for="abstract">Resumo da Palestra:</label>
           <textarea name="abstract" id="abstract" placeholder="Explique o conteúdo da sua palestra" cols="30" rows="10"></textarea>
         </div>
@@ -62,14 +62,14 @@
       
         <!-- checkbox - available -->
 
-        <div class="line-content">
+        <div>
           <input type="checkbox" name="available" id="available" value="is_available">
           <label for="available"> Confirmo que estou disponível da data do evento.</label>
         </div>
 
         <!-- botão - enviar - submit -->
 
-        <div class="line-content">
+        <div>
           <button type="submit"> Enviar</button>
         </div>
 
