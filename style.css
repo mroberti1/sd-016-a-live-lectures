@@ -281,4 +281,16 @@ footer p {
   .features .grid {
     flex-direction: column;
   }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter form button {
+    margin-top: 20px;
+  }
+
+  .newsletter form input {
+    margin-right: 0;
+  }
 }
