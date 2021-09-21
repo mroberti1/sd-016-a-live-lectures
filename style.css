@@ -293,4 +293,8 @@ footer p {
   .newsletter form input {
     margin-right: 0;
   }
+
+  footer ul li i {
+    font-size: 50px;
+  }
 }
