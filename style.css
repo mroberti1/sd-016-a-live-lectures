@@ -250,3 +250,15 @@ footer p {
   color: #c3c63b;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  /* header não fica fixo, centralizar logo e ; */
+  header {
+    position: absolute;
+    justify-content: center;
+  }
+  /* remover links */
+  nav {
+    display: none;
+  }
+}
