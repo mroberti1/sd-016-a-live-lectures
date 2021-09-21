@@ -269,4 +269,12 @@ footer p {
   .hero h2 {
     font-size: 1em;
   }
+
+  img.small {
+    flex-basis: 100%;
+  }
+
+  img.large {
+    flex-basis: 100%;
+  }
 }
