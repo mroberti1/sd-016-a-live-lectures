@@ -277,4 +277,8 @@ footer p {
   img.large {
     flex-basis: 100%;
   }
+
+  .features .grid {
+    flex-direction: column;
+  }
 }
