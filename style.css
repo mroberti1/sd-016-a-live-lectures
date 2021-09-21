@@ -261,4 +261,12 @@ footer p {
   nav {
     display: none;
   }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero h2 {
+    font-size: 1em;
+  }
 }
