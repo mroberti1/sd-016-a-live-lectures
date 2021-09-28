@@ -33,3 +33,7 @@ test('Espera que o somatório de 1 seja igual a 1', () => {
 test('Espera que o somatório de 3 seja igual a 6', () => {
   expect(summationOf(3)).toBe(6);
 });
+
+test('Espera que o somatório de 5 seja igual a 15', () => {
+  expect(summationOf(5)).toBe(15);
+});
