@@ -26,19 +26,12 @@
       }
 
       function onClickButton() {
-        const value = document.querySelector('#number').value;
-        const result = summationOf(value);
-
-        switch (result) {
-          case -1:
-            showError('summationOf deve receber um valor');
-            break;
-          case -2:
-            showError('summationOf deve receber apenas números');
-            break;
-          default:
-            showResult(value, result);
-            break;
+        try {
+          const value = document.querySelector('#number').value;
+          const result = summationOf(value);
+          showResult(value, result);
+        } catch (error) {
+          showError(error.message);
         }
       }
 

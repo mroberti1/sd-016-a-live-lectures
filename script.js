@@ -13,13 +13,13 @@ function sum(a, b) {
  */
 function summationOf(value) {
   if (value === '') {
-    return -1; // retorna um código de erro arbitrário
+    throw Error('summationOf deve receber um valor'); // Error é um tipo especial que serve para ser arremessado
   }
 
   const number = Number(value); // converte value para number
 
   if (Number.isNaN(number)) { // isNaN verifica se o valor convertido NÃO é um número
-    return -2; // retorna um código de erro arbitrário
+    throw Error('summationOf deve receber apenas números');
   }
 
   let summation = 0;
