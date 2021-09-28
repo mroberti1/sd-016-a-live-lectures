@@ -29,3 +29,7 @@ test('Espera que a função summationOf exista', () => {
 test('Espera que o somatório de 1 seja igual a 1', () => {
   expect(summationOf(1)).toBe(1);
 });
+
+test('Espera que o somatório de 3 seja igual a 6', () => {
+  expect(summationOf(3)).toBe(6);
+});
