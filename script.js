@@ -11,8 +11,8 @@ function sum(a, b) {
  * - `summationOf(3)` retorna 6: soma de 1 até 3 = 1 + 2 + 3 = 6
  * - `summationOf(5)` retorna 15: soma de 1 até 5 = 1 + 2 + 3 + 4 + 5 = 15
  */
-function summationOf() {
-
+function summationOf(number) {
+  return 1;
 }
 
 module.exports = { sum, summationOf };

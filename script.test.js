@@ -25,3 +25,7 @@ test('adds 0 + (-10) to equal -10', () => {
 test('Espera que a função summationOf exista', () => {
   expect(typeof summationOf).toBe('function');
 });
+
+test('Espera que o somatório de 1 seja igual a 1', () => {
+  expect(summationOf(1)).toBe(1);
+});
