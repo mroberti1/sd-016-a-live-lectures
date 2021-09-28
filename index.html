@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summation Of</title>
+    <style>
+      .block {
+        display: block;
+        margin-bottom: 4px;
+      }
+    </style>
+
+    <script src="script.js"></script>
+    <script>
+      function showResult(userInput, result) {
+        document.querySelector('#resultText').innerHTML =
+          `O somatório de <strong>${userInput}</strong> é <strong>${result}</strong>`;
+      }
+
+      function showError(error) {
+        document.querySelector('#resultText').innerHTML =
+          `<span style="color: red">${error}</span>`;
+      }
+
+      function onClickButton() {
+        const value = document.querySelector('#number').value;
+        const result = summationOf(value);
+
+        switch (result) {
+          case -1:
+            showError('summationOf deve receber um valor');
+            break;
+          case -2:
+            showError('summationOf deve receber apenas números');
+            break;
+          default:
+            showResult(value, result);
+            break;
+        }
+      }
+
+      window.onload = () => {
+        document.querySelector('button')
+          .addEventListener('click', onClickButton);
+      };
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Somatório</h1>
+
+      <label class="block" for="number">Digite um valor numérico para se calcular seu somatório</label>
+      <input type="text" name="number" id="number" class="block">
+      <button class="block">Calcular</button>
+
+      <section id="result">
+        <p id="resultText"></p>
+      </section>
+    </main>
+  </body>
+
+</html>

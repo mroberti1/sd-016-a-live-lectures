@@ -11,7 +11,17 @@ function sum(a, b) {
  * - `summationOf(3)` retorna 6: soma de 1 até 3 = 1 + 2 + 3 = 6
  * - `summationOf(5)` retorna 15: soma de 1 até 5 = 1 + 2 + 3 + 4 + 5 = 15
  */
-function summationOf(number) {
+function summationOf(value) {
+  if (value === '') {
+    return -1; // retorna um código de erro arbitrário
+  }
+
+  const number = Number(value); // converte value para number
+
+  if (Number.isNaN(number)) { // isNaN verifica se o valor convertido NÃO é um número
+    return -2; // retorna um código de erro arbitrário
+  }
+
   let summation = 0;
   for (let index = 1; index <= number; index += 1) {
     summation += index;
@@ -19,4 +29,4 @@ function summationOf(number) {
   return summation;
 }
 
-module.exports = { sum, summationOf };
+// module.exports = { sum, summationOf };
