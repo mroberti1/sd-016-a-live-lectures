@@ -1,4 +1,4 @@
-const sum = require('./script');
+const { sum, summationOf } = require('./script');
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -20,4 +20,8 @@ test('adds -5 + (-39) to equal -44', () => {
 
 test('adds 0 + (-10) to equal -10', () => {
   expect(sum(-0, -10)).toBe(-10);
+});
+
+test('Espera que a função summationOf exista', () => {
+  expect(typeof summationOf).toBe('function');
 });

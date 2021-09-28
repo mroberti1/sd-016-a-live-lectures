@@ -2,4 +2,17 @@ function sum(a, b) {
   return a + b;
 }
 
-module.exports = sum;
+/**
+ * Implemente uma função `summationOf(number)` que recebe um número inteiro e retorna o seu [somatório](https://pt.wikipedia.org/wiki/Somat%C3%B3rio).
+ *
+ * Por exemplo:
+ *
+ * - `summationOf(1)` retorna 1: soma de 1 até 1 = 1
+ * - `summationOf(3)` retorna 6: soma de 1 até 3 = 1 + 2 + 3 = 6
+ * - `summationOf(5)` retorna 15: soma de 1 até 5 = 1 + 2 + 3 + 4 + 5 = 15
+ */
+function summationOf() {
+
+}
+
+module.exports = { sum, summationOf };
