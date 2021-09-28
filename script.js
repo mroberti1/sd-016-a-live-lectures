@@ -29,4 +29,4 @@ function summationOf(value) {
   return summation;
 }
 
-// module.exports = { sum, summationOf };
+module.exports = { sum, summationOf };

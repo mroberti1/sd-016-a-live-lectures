@@ -39,5 +39,13 @@ describe('The function summationOf', () => {
   
   it('Espera que o somatório de 5 seja igual a 15', () => {
     expect(summationOf(5)).toBe(15);
-  });  
+  });
+
+  it('Throws an error when the input is an empty string', () => {
+    expect(() => { summationOf('') }).toThrowError('summationOf deve receber um valor');
+  });
+
+  it('Throws an error when the input is not numbers', () => {
+    expect(() => summationOf('xablau')).toThrow('summationOf deve receber apenas números');
+  });
 });
