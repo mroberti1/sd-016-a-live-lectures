@@ -14,3 +14,9 @@ const cities = [
 
 // 2. Encontre todas as cidades do estado de Tocantins (TO)
 console.log('As cidades do estado de Tocantins são: ');
+
+const citiesFromTocantins = cities.filter((city) => {
+  return city.state === 'TO';
+});
+
+console.log(citiesFromTocantins);

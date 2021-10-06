@@ -14,3 +14,16 @@ const cities = [
 
 // 1. Encontre todas as cidades da região Nordeste (NE)
 console.log('As cidades que ficam na região Nordeste são: ');
+
+// const citiesNE = [];
+// for (let index = 0; index < cities.length; index += 1) {
+//   if (cities[index].region === 'NE') {
+//     citiesNE.push(cities[index]);
+//   }
+// }
+
+const citiesNE = cities.filter((city) => {
+  return city.region === 'NE';
+});
+
+console.log(citiesNE);

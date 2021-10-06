@@ -14,3 +14,10 @@ const cities = [
 
 // 3. Encontre todas as cidades que comecem com a letra C
 console.log('As cidades que começam com a letra C são: ');
+
+const citiesThatStartsWithC = cities.filter((city) => {
+  // return city.name[0] === 'C';
+  return city.name.startsWith('C');
+});
+
+console.log(citiesThatStartsWithC);
