@@ -33,3 +33,13 @@ const cities = [
 // 1. Transformar (mapear) o array de objetos cities em um array de strings com o seguinte formato:
 // b) 'A cidade de ${nomeDaCidade} fica no estado de ${nomeDoEstado}'
 console.log('Formato: A cidade de ${nomeDaCidade} fica no estado de ${nomeDoEstado}');
+
+const citiesAndSatesName = cities.map((city) => {
+
+  // Precisamos ENCONTRAR quel é o estado a partir da sigla do estado da cidade atual
+  const stateOfCurrentCity = states.find((state) => state.short === city.state);
+
+  return `A cidade de ${city.name} fica no estado de ${stateOfCurrentCity.name}`;
+});
+
+console.log(citiesAndSatesName);

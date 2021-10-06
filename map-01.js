@@ -33,3 +33,14 @@ const cities = [
 // 1. Transformar (mapear) o array de objetos cities em um array de strings com o seguinte formato:
 // a) '${nomeDaCidade} - ${siglaDoEstado}'
 console.log('Formato: ${nomeDaCidade} - ${siglaDoEstado}');
+
+// const citiesAndStates = [];
+// for (let index = 0; index < cities.length; index += 1) {
+//   citiesAndStates.push(`${cities[index].name} - ${cities[index].state}`);
+// }
+
+const citiesAndStates = cities.map((city) => {
+  return `${city.name} - ${city.state}`;
+});
+
+console.log(citiesAndStates);
